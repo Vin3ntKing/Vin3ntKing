@@ -1,3 +1,4 @@
+[English](./README.md) | [中文](./README.zh.md)
 - 🚀 Ahoy there! Meet Jinquan Pan, the code-slinging, data-wrangling wiz with a GPA so high it's out of this world! 🌟 Studying Mathematics and Computer Science at Boston University, Jinquan has conquered Data Structures, Computer Systems, Software Engineering, and more. But beware, the Dean's List is a regular landing spot for this rocketeer!
 
 - 🔧 Equipped with a cosmic toolbox of Python, Java, SQL, and more, Jinquan's been busy saving the digital universe one project at a time. From battling in CitiBank's Financial Innovation Application Competition to leading a COVID-19 policies research, no challenge is too great!
