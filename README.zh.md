@@ -13,7 +13,7 @@
 - 🌐 作为波士顿大学中国学生学者联合会 (CSSA) 技术团队的负责人，潘金泉每天都在维护和更新 CSSA 网站，包括更新信息、修改模块布局和优化 CSSA 网页美化。
 还在微信上制作了一个小程序，帮助波士顿大学的中国学生找到有用的信息，如租房、选课和学校活动。
 
-- 💬 精通普通话、广东话和英语，潘金泉已经准备好参加任何跨星际任务。所以，系好安全带，加入这位星际编程高手的探险之旅吧！🌌 \
+- 💬 精通普通话、广东话和英语，潘金泉已经准备好参加任何跨星际任务。所以，系好安全带，加入这位星际编程高手的探险之旅吧！🌌 
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Vin3ntKing&show_icons=true&theme=radical" alt="Vin3ntKing's GitHub stats" height="195">
