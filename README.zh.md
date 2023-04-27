@@ -15,5 +15,8 @@
 
 - 💬 精通普通话、广东话和英语，潘金泉已经准备好参加任何跨星际任务。所以，系好安全带，加入这位星际编程高手的探险之旅吧！🌌 \
 
-![Vin3ntKing's GitHub stats](https://github-readme-stats.vercel.app/api?username=Vin3ntKing&show_icons=true&theme=radical)\
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Vin3ntKing&layout=compact&theme=radical)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Vin3ntKing&show_icons=true&theme=radical" alt="Vin3ntKing's GitHub stats" height="195">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vin3ntKing&layout=compact&theme=radical" alt="Top Langs" height="195">
+</p>
+
