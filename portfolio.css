@@ -59,14 +59,16 @@ h2 {
 }
 
 .notebook-box {
-    background-color: #8d91a9; /* Deep grey color */
-    color: #090909; /* White text color */
-    padding: 20px; /* Add padding */
-    width: 300px; /* Adjust width as needed */
-    margin-top: 10px;
-    border-bottom: none; /* Remove the border-bottom property */
-    border: none; /* Remove the border property */
+  background-color: #b3b4b7;
+  color: #090909;
+  padding: 20px;
+  width: 300px;
+  margin-top: 10px;
+  border-bottom: none;
+  border: none;
+  border-radius: 10px; /* Adjust the value to change the roundness of the corners */
 }
+
 
 
   
