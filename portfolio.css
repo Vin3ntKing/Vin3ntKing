@@ -11,7 +11,7 @@ body {
 
 h2 {
     font-family: "Arial Black", sans-serif; /* Apply interesting font */
-    color: #9a97a2; /* Apply outstanding color */
+    color: #353435; /* Apply outstanding color */
 }
 
 
@@ -54,14 +54,18 @@ h2 {
 }
 
 .project-image {
-    margin-right: 10px; /* Adjust margin as needed */
+    margin-right: 20px; /* Adjust margin as needed */
+    margin-top: 25px;
 }
 
 .notebook-box {
-    background-color: #aeacac; /* Deep grey color */
+    background-color: #8d91a9; /* Deep grey color */
     color: #090909; /* White text color */
     padding: 20px; /* Add padding */
     width: 300px; /* Adjust width as needed */
+    margin-top: 10px;
+    border-bottom: none; /* Remove the border-bottom property */
+    border: none; /* Remove the border property */
 }
 
 
