@@ -1,0 +1,98 @@
+/* Body margin */
+body {
+    margin: 0;
+}
+  
+  section {
+    margin-left: 100px; /* Set the left margin */
+    margin-right: 100px; /* Set the right margin */
+}
+
+
+h2 {
+    font-family: "Arial Black", sans-serif; /* Apply interesting font */
+    color: #9a97a2; /* Apply outstanding color */
+}
+
+
+  .background-container {
+    background-color: #cbcbcb; /* Light gray color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add some padding around the content */
+    box-shadow: 0 0 5px rgba(37, 36, 36, 0.1); /* Add a subtle box shadow */
+    max-width: 800px; /* Limit the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex; /* Use flexbox to align projects in a row */
+    flex-wrap: wrap; /* Allow projects to wrap to the next row */
+    justify-content: space-between; /* Add space between projects */
+}
+  
+  /* Project container */
+  .container {
+    position: relative;
+    max-width: 360px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+}
+  
+  .container .content {
+    display: none; /* Hide the content initially */
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+  
+  .container:hover .content {
+    display: block; /* Show the content when hovering over the container */
+}
+
+.project-wrapper {
+    display: flex;
+}
+
+.project-image {
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.notebook-box {
+    background-color: #aeacac; /* Deep grey color */
+    color: #090909; /* White text color */
+    padding: 20px; /* Add padding */
+    width: 300px; /* Adjust width as needed */
+}
+
+
+  
+  /* Navigation bar */
+  #portfolio-nav {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: #ffeb8b; /* Old yellow background */
+    padding: 10px;
+    border: none; /* Remove border */
+    list-style-type: none;
+    font-family: 'Arial', sans-serif;
+}
+  
+  #portfolio-nav li {
+    margin-bottom: 10px;
+}
+  
+  #portfolio-nav a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    background-color: transparent; /* Remove background color */
+    font-style: italic; /* Make letters italic */
+}
+  
+  #portfolio-nav a:hover {
+    background-color: #f0f0f0; /* Hover background color */
+}
+  
