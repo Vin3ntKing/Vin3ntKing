@@ -1,0 +1,149 @@
+.header-title,
+.header-subtitle{
+    visibility: hidden;
+}
+
+p {
+    font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: 100;
+    opacity: 1;
+    color: #000000;
+    letter-spacing: .6px;
+  }
+  
+  .header-subtitle{
+    color: #ffffff;
+  }
+  
+  
+  .scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    z-index: 100;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    z-index: 9;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) rotate(45deg);
+    -moz-transform: translate(-50%, 0%) rotate(45deg);
+    transform: translate(-50%, 0%) rotate(45deg);
+    -webkit-animation: fade_move_down 4s ease-in-out infinite;
+    -moz-animation:    fade_move_down 4s ease-in-out infinite;
+    animation:         fade_move_down 4s ease-in-out infinite;
+  }
+  
+  
+  /*animated scroll arrow animation*/
+  @-webkit-keyframes fade_move_down {
+    0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+  @-moz-keyframes fade_move_down {
+    0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+  @keyframes fade_move_down {
+    0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+
+
+/*person pics*/
+.about-img {
+    display: block; 
+    width: 400px;  /* 2.5 times 200px */
+    height: 400px;  /* 2.5 times 200px */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+@keyframes lightAround {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.about-img-container {
+    margin-top: 50px; 
+    margin-right: 50px;
+    position: relative;
+    width: 420px;  /* 2.5 times 210px */
+    height: 420px;  /* 2.5 times 210px */
+}
+
+.about-img-container::before {
+    content: "";
+    position: absolute;
+    top: -10px;  /* 2.5 times 5px */
+    left: -10px;  /* 2.5 times 5px */
+    width: 420px;  /* 2.5 times 210px */
+    height: 420px;  /* 2.5 times 210px */
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top-color: rgb(61, 141, 198);  /* The color of the light */
+    animation: lightAround 5s linear infinite; /* Adjust the duration as necessary */
+}
+
+
+/* My Skills */
+.skill-container {
+  display: flex;          /* Make the container a flex container */
+  align-items: center;    /* Vertically center-align its child items */
+  flex-direction: column; /* Stack child items vertically */
+  width: 100%;            /* Ensure it takes full width */
+  margin-bottom: 10px;    /* Add some margin to separate the skills */
+}
+
+.my-skills-container .progress {
+  height: 20px;
+  border-radius: 20px;
+}
+
+.my-skills-container .progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
+}
+
+.my-skills-container span {
+    margin-top: 10px;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #888888;
+    line-height: 20px;
+    text-align: left;      /* Align the text to the left */
+    width: 100%;           /* Make the span take the full width of its parent */
+}
+
+.my-skills-container .progress-bar {
+  width: 0%; /* Initial width */
+  background-color:#FA8128 ;
+  transition: width 1.5s ease-in-out; /* Animate the width property */
+}
+
+
+/*card image crop*/
+.portfolio-card-img {
+  width: 100%;       /* Ensures the image fills the width of its parent container */
+  height: 300px;     /* This will define the height of the square. You can adjust as needed. */
+  object-fit: cover; /* This will crop and scale the image to fit its container */
+  border-radius: 5px; /* Optional: If you want the images to have rounded corners */
+}
+
