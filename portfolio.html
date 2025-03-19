@@ -116,6 +116,14 @@
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      /* Removing hover effects on project wrappers */
+      transition: none;
+    }
+
+    /* Override any hover effects on project-wrapper */
+    .project-wrapper:hover {
+      transform: none;
+      box-shadow: none;
     }
 
     .project-image img {
