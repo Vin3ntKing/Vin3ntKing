@@ -1,192 +1,350 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Jinquan Pan's Portfolio</title>
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="portfolio.css">
-    <script href="./scipts/portfolio_script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jinquan Pan's Portfolio</title>
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="portfolio.css">
+  <script src="./scripts/portfolio_script.js"></script>
+  <style>
+    /* Basic Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding-bottom: 40px;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: #555;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* Portfolio navigation styling */
+    #section-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    #portfolio-nav {
+      list-style: none;
+      flex-basis: 20%;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    #portfolio-nav li {
+      margin-bottom: 10px;
+    }
+
+    #portfolio-nav li a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    #portfolio-nav li a:hover {
+      color: #ffd700;
+    }
+
+    .background-container {
+      flex: 1;
+      padding: 20px;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    .project-container,
+    .container.project-section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .project-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .project-image img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .notebook-box {
+      padding: 10px;
+      background: #f1f1f1;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      min-width: 200px;
+    }
+
+    .content h3 {
+      margin-top: 10px;
+      font-size: 1.5rem;
+    }
+
+    .content p {
+      margin-top: 10px;
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      #section-nav {
+        flex-direction: column;
+      }
+      #portfolio-nav {
+        flex-basis: auto;
+      }
+      .project-wrapper {
+        flex-direction: column;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: #333;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Jinquan Pan</h1>
-        <p>B.A. in Mathematics and Computer Science at Boston University</p>
-    </header>
-    <nav>
-        <a href="./index.html">About Myself</a>
-        <a href="./portfolio.html">Portfolio</a>
-        <a href="./resume.html">Resume</a>
-        <a href="#blog">Blog</a>
-        <a href="#travel">Fun Travel</a>
-    </nav>
-    <section style="margin-left: 20px; margin-right: 20px;">
-        <div id="section-nav" style="display: flex;">
-            <ul id="portfolio-nav">
-                <li><a href="#mobile-app">Mobile App</a></li>
-                <li><a href="#web-development">Web Development</a></li>
-                <li><a href="#data-scientist">Data Scientist</a></li>
-                <li><a href="#network-security">Network Security</a></li>
-            </ul>            
-            <div class="background-container">
-                <section id="mobile-app">
-                    <h2>Mobile App</h2>
-                    <div class="project-container">
-                        <div class="container">
-                            <!-- First project -->
-                            <a href="https://github.com/Vin3ntKing/Flutter_Word_Combinator">
-                                <div class="project-wrapper">
-                                    <div class="project-image">
-                                        <img src='./picture/word_app.png' style="height: 300pt;width: 400pt;">
-                                    </div>
-                                    <div class="notebook-box">
-                                        <p><strong>Started:</strong>April 2023</p>
-                                        <p><strong>Team:</strong>Jinquan Pan(Individual Project)</p>
-                                        <p><strong>Location:</strong>Boston, MA</p>
-                                        <p><strong>Stakeholders:</strong>Personal Interst</p>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <h3>Flutter Word Combinator</h3>
-                                    <p>A simple, fun application built with Flutter that randomly generates unique combinations of two English words.</p>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <div class="container">
-                            <!-- Second project -->
-                            <a href="https://github.com/Vin3ntKing/Another_Project_URL">
-                                <div class="project-wrapper">
-                                    <div class="project-image">
-                                        <img src='./picture/congress.jpeg' style="height: 300pt;width: 400pt;">
-                                    </div>
-                                    <div class="notebook-box">
-                                        <p><strong>Started:</strong>May 2023</p>
-                                        <p><strong>Team:</strong>Summer Impact Team</p>
-                                        <p><strong>Location:</strong>Boston, MA</p>
-                                        <p><strong>Stakeholders:</strong>Congress, Voter System, U.S. citizens</p>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <h3>(Coming Soon) USCensus Flutter App</h3>
-                                    <p>This Flutter application is being developed as part of my USCensus project. The goal of this project is to create a mobile app that provides access to various census data and statistics.</p>
-                                </div>
-                            </a>
-                        </div>
+  <header>
+    <h1>Jinquan Pan</h1>
+    <p>B.A. in Mathematics and Computer Science at Boston University</p>
+  </header>
+  <nav>
+    <a href="./index.html">About Myself</a>
+    <a href="./portfolio.html">Portfolio</a>
+    <a href="./resume.html">Resume</a>
+    <a href="#blog">Blog</a>
+    <a href="#travel">Fun Travel</a>
+  </nav>
+  <div class="container">
+    <section id="portfolio">
+      <div id="section-nav">
+        <ul id="portfolio-nav">
+          <li><a href="#mobile-app">Mobile App</a></li>
+          <li><a href="#web-development">Web Development</a></li>
+          <li><a href="#data-scientist">Data Scientist</a></li>
+          <li><a href="#network-security">Network Security</a></li>
+        </ul>
+        <div class="background-container">
+          <section id="mobile-app">
+            <h2>Mobile App</h2>
+            <div class="project-container">
+              <div class="container project-section">
+                <!-- First project -->
+                <a href="https://github.com/Vin3ntKing/Flutter_Word_Combinator">
+                  <div class="project-wrapper">
+                    <div class="project-image">
+                      <img src="./picture/word_app.png" alt="Flutter Word Combinator">
                     </div>
-                </section>
-                
-                <section id="web-development">
-                    <h2>Web Development</h2>
-                    <div class="container">
-                        <a href="https://github.com/Vin3ntKing/LittleTwitterClone">
-                            <div class="project-wrapper">
-                                <div class="project-image">
-                                    <img src='./picture/TwitterClone.png' style="height: 300pt;width: 400pt;">
-                                </div>
-                                <div class="notebook-box">
-                                    <p><strong>Started:</strong>January 2022</p>
-                                    <p><strong>Team:</strong>Jinquan Pan(Individual Project)</p>
-                                    <p><strong>Location:</strong>Boston, MA</p>
-                                    <p><strong>Stakeholders:</strong>Personal Interest</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h3>LittleTwitterClone</h3>
-                                <p>a simple, lightweight Twitter-like application built using Node.js, JavaScript, HTML, and MongoDB. Users can send tweets, which will be displayed in a reverse-chronological order, showing the latest tweets at the top.</p>
-                            </div>
-                        </a>
+                    <div class="notebook-box">
+                      <p><strong>Started:</strong> April 2023</p>
+                      <p><strong>Team:</strong> Jinquan Pan (Individual Project)</p>
+                      <p><strong>Location:</strong> Boston, MA</p>
+                      <p><strong>Stakeholders:</strong> Personal Interest</p>
                     </div>
-                </section>
-                <section id="data-scientist">
-                    <h2>Data Scientist</h2>
-                    <div class="container">
-                        <a href="./file/dashboard.html">
-                            <div class="project-wrapper">
-                                <div class="project-image">
-                                    <img src='./picture/DataScientProj.png' style="height: 300pt;width: 400pt;">
-                                </div>
-                                <div class="notebook-box">
-                                    <p><strong>Started:</strong>June 2023</p>
-                                    <p><strong>Team:</strong>Massmutal x Spark Team</p>
-                                    <p><strong>Location:</strong>Boston, MA</p>
-                                    <p><strong>Stakeholders:</strong>New Commonwealth Fund, Massmutal, Spark</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h3>Computer Science Education in Massachusetts Schools</h3>
-                                <p>The New Commonwealth Fund (NCF) seeks to better understand the educational divide across Massachusetts school districts, particularly with a focus on computer science education and AP test taking for Black, LatinX and indigenous peoples.</p>
-                            </div>
-                        </a>
+                  </div>
+                  <div class="content">
+                    <h3>Flutter Word Combinator</h3>
+                    <p>A simple, fun application built with Flutter that randomly generates unique combinations of two English words.</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="container project-section">
+                <!-- Second project -->
+                <a href="https://github.com/Vin3ntKing/Another_Project_URL">
+                  <div class="project-wrapper">
+                    <div class="project-image">
+                      <img src="./picture/congress.jpeg" alt="USCensus Flutter App">
                     </div>
-
-                    <div class="container">
-                        <a href="https://app.powerbi.com/links/EYiRPzpjLX?ctid=d57d32cc-c121-488f-b07b-dfe705680c71&pbi_source=linkShare">
-                            <div class="project-wrapper">
-                                <div class="project-image">
-                                    <img src='./picture/COVID_data.png' style="height: 300pt;width: 400pt;">
-                                </div>
-                                <div class="notebook-box">
-                                    <p><strong>Started:</strong>December 2022</p>
-                                    <p><strong>Team:</strong>Spark Team x DS310 Team</p>
-                                    <p><strong>Location:</strong>Boston, MA</p>
-                                    <p><strong>Stakeholders:</strong>Class Project Interest</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h3>Covid-19 Data Analysis</h3>
-                                <p>Use COVID data to get insights of which policies can efficiently prevent COVID from wild public spreading</p>
-                            </div>
-                        </a>
+                    <div class="notebook-box">
+                      <p><strong>Started:</strong> May 2023</p>
+                      <p><strong>Team:</strong> Summer Impact Team</p>
+                      <p><strong>Location:</strong> Boston, MA</p>
+                      <p><strong>Stakeholders:</strong> Congress, Voter System, U.S. citizens</p>
                     </div>
-                </section>              
-                <section id="network-security">
-                    <h2>Network Security</h2>
-                    <div class="container">
-                        <a href="https://drive.google.com/file/d/1DvEn5w9w-Vakuccer0IZMdHsPauje9a_/view?usp=sharing">
-                            <div class="project-wrapper">
-                                <div class="project-image">
-                                    <img src='./picture/web_audit.png' style="height: 300pt;width: 400pt;">
-                                </div>
-                                <div class="notebook-box">
-                                    <p><strong>Started:</strong>September 2022</p>
-                                    <p><strong>Team:</strong>BU CS357 Team</p>
-                                    <p><strong>Location:</strong>Boston, MA</p>
-                                    <p><strong>Stakeholders:</strong>Class Project Interest</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h3>Web Audit Project</h3>
-                                <p>analyze the client-server communication from the
-                                    website, in order to understand what information is collected and recorded when users surf the
-                                    selected website.</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="container">
-                        <!-- Second project -->
-                        <a href="https://docs.google.com/document/d/1DhCWshLK3L0OBXSAUl8fknUUmLLD_Z-FdCu59kX4dmc/edit">
-                            <div class="project-wrapper">
-                                <div class="project-image">
-                                    <img src='./picture/security_news.png' style="height: 300pt;width: 400pt;">
-                                </div>
-                                <div class="notebook-box">
-                                    <p><strong>Started:</strong>October 2023</p>
-                                    <p><strong>Team:</strong>BU CS357 Team</p>
-                                    <p><strong>Location:</strong>Boston, MA</p>
-                                    <p><strong>Stakeholders:</strong>BU students</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h3>Security News Report</h3>
-                                <p> prepare and create a poster about a news-worthy
-                                    topic related to security and privacy that has recently appeared in the tech popular press</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                </section>
+                  </div>
+                  <div class="content">
+                    <h3>(Coming Soon) USCensus Flutter App</h3>
+                    <p>This Flutter application is being developed as part of my USCensus project. The goal is to create a mobile app that provides access to various census data and statistics.</p>
+                  </div>
+                </a>
+              </div>
             </div>
+          </section>
+          
+          <section id="web-development">
+            <h2>Web Development</h2>
+            <div class="container project-section">
+              <a href="https://github.com/Vin3ntKing/LittleTwitterClone">
+                <div class="project-wrapper">
+                  <div class="project-image">
+                    <img src="./picture/TwitterClone.png" alt="LittleTwitterClone">
+                  </div>
+                  <div class="notebook-box">
+                    <p><strong>Started:</strong> January 2022</p>
+                    <p><strong>Team:</strong> Jinquan Pan (Individual Project)</p>
+                    <p><strong>Location:</strong> Boston, MA</p>
+                    <p><strong>Stakeholders:</strong> Personal Interest</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>LittleTwitterClone</h3>
+                  <p>A simple, lightweight Twitter-like application built using Node.js, JavaScript, HTML, and MongoDB. Users can send tweets that are displayed in reverse-chronological order.</p>
+                </div>
+              </a>
+            </div>
+          </section>
+          
+          <section id="data-scientist">
+            <h2>Data Scientist</h2>
+            <div class="container project-section">
+              <a href="./file/dashboard.html">
+                <div class="project-wrapper">
+                  <div class="project-image">
+                    <img src="./picture/DataScientProj.png" alt="Computer Science Education in Massachusetts Schools">
+                  </div>
+                  <div class="notebook-box">
+                    <p><strong>Started:</strong> June 2023</p>
+                    <p><strong>Team:</strong> Massmutal x Spark Team</p>
+                    <p><strong>Location:</strong> Boston, MA</p>
+                    <p><strong>Stakeholders:</strong> New Commonwealth Fund, Massmutal, Spark</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>Computer Science Education in Massachusetts Schools</h3>
+                  <p>The New Commonwealth Fund (NCF) seeks to better understand the educational divide across Massachusetts school districts, particularly focusing on computer science education and AP test taking for underrepresented communities.</p>
+                </div>
+              </a>
+            </div>
+            <div class="container project-section">
+              <a href="https://app.powerbi.com/links/EYiRPzpjLX?ctid=d57d32cc-c121-488f-b07b-dfe705680c71&pbi_source=linkShare">
+                <div class="project-wrapper">
+                  <div class="project-image">
+                    <img src="./picture/COVID_data.png" alt="Covid-19 Data Analysis">
+                  </div>
+                  <div class="notebook-box">
+                    <p><strong>Started:</strong> December 2022</p>
+                    <p><strong>Team:</strong> Spark Team x DS310 Team</p>
+                    <p><strong>Location:</strong> Boston, MA</p>
+                    <p><strong>Stakeholders:</strong> Class Project Interest</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>Covid-19 Data Analysis</h3>
+                  <p>Use COVID data to gain insights into policies that can efficiently prevent widespread public transmission.</p>
+                </div>
+              </a>
+            </div>
+          </section>
+          
+          <section id="network-security">
+            <h2>Network Security</h2>
+            <div class="container project-section">
+              <a href="https://drive.google.com/file/d/1DvEn5w9w-Vakuccer0IZMdHsPauje9a_/view?usp=sharing">
+                <div class="project-wrapper">
+                  <div class="project-image">
+                    <img src="./picture/web_audit.png" alt="Web Audit Project">
+                  </div>
+                  <div class="notebook-box">
+                    <p><strong>Started:</strong> September 2022</p>
+                    <p><strong>Team:</strong> BU CS357 Team</p>
+                    <p><strong>Location:</strong> Boston, MA</p>
+                    <p><strong>Stakeholders:</strong> Class Project Interest</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>Web Audit Project</h3>
+                  <p>Analyze client-server communication to understand what information is collected and recorded when users browse the website.</p>
+                </div>
+              </a>
+            </div>
+            <div class="container project-section">
+              <a href="https://docs.google.com/document/d/1DhCWshLK3L0OBXSAUl8fknUUmLLD_Z-FdCu59kX4dmc/edit">
+                <div class="project-wrapper">
+                  <div class="project-image">
+                    <img src="./picture/security_news.png" alt="Security News Report">
+                  </div>
+                  <div class="notebook-box">
+                    <p><strong>Started:</strong> October 2023</p>
+                    <p><strong>Team:</strong> BU CS357 Team</p>
+                    <p><strong>Location:</strong> Boston, MA</p>
+                    <p><strong>Stakeholders:</strong> BU students</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>Security News Report</h3>
+                  <p>Prepare and create a poster about a news-worthy topic related to security and privacy that has recently appeared in the tech popular press.</p>
+                </div>
+              </a>
+            </div>
+          </section>
         </div>
+      </div>
     </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 Jinquan Pan. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
