@@ -105,10 +105,10 @@
       padding-bottom: 10px;
     }
 
-    /* Card Layout for Projects */
+    /* Card Layout for Projects: Vertical Layout */
     .project-card {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       background: #fff;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -117,24 +117,22 @@
       color: inherit;
     }
 
-    /* For projects with embedded video, use iframe instead of image */
-    .project-card iframe {
-      width: 100%;
-      max-width: 400px;
-      height: 225px;
-      border-radius: 8px 0 0 8px;
-    }
-
+    /* Media (iframe & image) fill the card width */
+    .project-card iframe,
     .project-card img {
       width: 100%;
-      max-width: 400px;
-      border-radius: 8px 0 0 8px;
+      border-radius: 8px 8px 0 0;
       object-fit: cover;
+    }
+
+    .project-card iframe {
+      /* Set a fixed aspect ratio for video (16:9) */
+      height: calc(100% * 9 / 16);
+      max-height: 400px; /* Optional: Limit the height */
     }
 
     .project-details {
       padding: 20px;
-      flex: 1;
     }
 
     .project-details p {
@@ -153,13 +151,6 @@
       }
       #portfolio-nav {
         flex-basis: auto;
-      }
-      .project-card {
-        flex-direction: column;
-      }
-      .project-card iframe,
-      .project-card img {
-        border-radius: 8px 8px 0 0;
       }
     }
 
@@ -249,7 +240,7 @@
           <section id="data-scientist">
             <h2>Data Scientist</h2>
 
-            <!-- New Project: Video Classification -->
+            <!-- New Project: Video Classification (Placed on Top) -->
             <div class="project-card">
               <!-- Embedded video iframe -->
               <iframe src="https://www.youtube.com/embed/Z93zupC82wk?start=508" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
