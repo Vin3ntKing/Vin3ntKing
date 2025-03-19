@@ -113,8 +113,16 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       margin-bottom: 30px;
-      text-decoration: none; /* Remove underline for link */
-      color: inherit;        /* Inherit text color */
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* For projects with embedded video, use iframe instead of image */
+    .project-card iframe {
+      width: 100%;
+      max-width: 400px;
+      height: 225px;
+      border-radius: 8px 0 0 8px;
     }
 
     .project-card img {
@@ -149,6 +157,7 @@
       .project-card {
         flex-direction: column;
       }
+      .project-card iframe,
       .project-card img {
         border-radius: 8px 8px 0 0;
       }
@@ -240,7 +249,21 @@
           <section id="data-scientist">
             <h2>Data Scientist</h2>
 
-            <!-- Project 1 -->
+            <!-- New Project: Video Classification -->
+            <div class="project-card">
+              <!-- Embedded video iframe -->
+              <iframe src="https://www.youtube.com/embed/Z93zupC82wk?start=508" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="project-details">
+                <p><strong>Started:</strong> December 2023</p>
+                <p><strong>Team:</strong> Jinquan Pan (Individual Project)</p>
+                <p><strong>Location:</strong> Yale University</p>
+                <p><strong>Stakeholders:</strong> AI & ML Community</p>
+                <h3>Comparative Analysis of CNN+RNN and Transformer Models for Video Classification</h3>
+                <p>This project explores the application of deep learning models in video classification, evaluating two distinct approaches—a combination of CNNs and RNNs versus the Transformer model. The findings are crucial for applications such as surveillance, content moderation, and recommendation systems.</p>
+              </div>
+            </div>
+
+            <!-- Existing Data Scientist Projects -->
             <a href="./file/dashboard.html" class="project-card">
               <img src="./picture/DataScientProj.png" alt="Computer Science Education in Massachusetts Schools">
               <div class="project-details">
@@ -253,7 +276,6 @@
               </div>
             </a>
 
-            <!-- Project 2 -->
             <a href="https://app.powerbi.com/links/EYiRPzpjLX?ctid=d57d32cc-c121-488f-b07b-dfe705680c71&pbi_source=linkShare" class="project-card">
               <img src="./picture/COVID_data.png" alt="Covid-19 Data Analysis">
               <div class="project-details">
@@ -265,27 +287,12 @@
                 <p>Use COVID data to gain insights into policies that can efficiently prevent widespread public transmission.</p>
               </div>
             </a>
-
-            <!-- Project 3 (NEW) -->
-            <a href="https://www.youtube.com/watch?v=Z93zupC82wk&t=508s" class="project-card">
-              <!-- Replace with an appropriate thumbnail, if available -->
-              <img src="./picture/video_classification.png" alt="Comparative Analysis of CNN+RNN and Transformer Models for Video Classification">
-              <div class="project-details">
-                <p><strong>Started:</strong> December 2023</p>
-                <p><strong>Team:</strong> Jinquan Pan (Individual Project)</p>
-                <p><strong>Location:</strong> Yale University</p>
-                <p><strong>Stakeholders:</strong> AI & ML Community</p>
-                <h3>Comparative Analysis of CNN+RNN and Transformer Models for Video Classification</h3>
-                <p>This project explores the application of deep learning models in the field of video classification, evaluating two distinct approaches: a combination of Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs), and the Transformer model. These findings are crucial for applications such as surveillance, content moderation, and recommendation systems.</p>
-              </div>
-            </a>
           </section>
           
           <!-- NETWORK SECURITY SECTION -->
           <section id="network-security">
             <h2>Network Security</h2>
 
-            <!-- Project 1 -->
             <a href="https://drive.google.com/file/d/1DvEn5w9w-Vakuccer0IZMdHsPauje9a_/view?usp=sharing" class="project-card">
               <img src="./picture/web_audit.png" alt="Web Audit Project">
               <div class="project-details">
@@ -298,7 +305,6 @@
               </div>
             </a>
 
-            <!-- Project 2 -->
             <a href="https://docs.google.com/document/d/1DhCWshLK3L0OBXSAUl8fknUUmLLD_Z-FdCu59kX4dmc/edit" class="project-card">
               <img src="./picture/security_news.png" alt="Security News Report">
               <div class="project-details">
