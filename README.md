@@ -2,12 +2,13 @@
 
 # Hi, I'm Jinquan.
 
-Vincent works too. I build things around systems and data. A surprising amount of the work is agreeing on what a timestamp means.
+Vincent works too.
 
-I'm building **PPER**, a platform that helps people understand environmental proposals and write public comments. Still plenty of TODOs.
+A few things I've learned:
 
-There's also a **C++ market-data monitor** for OKX spot trades. It remembers the largest trades it has seen. “Largest” and “most recent” turned out to be different requirements.
-
-[My website](https://vin3ntking.github.io/Vin3ntKing/) has occasional technical notes, photos, and an unnecessarily well-armored avatar.
+- An off-by-one error is a small mistake, in either direction.
+- Two timestamps can disagree without either being wrong. This has not made debugging easier.
+- A cache invalidation problem goes away if you wait long enough. Sometimes so does the user.
+- I have a Challenger border on my website. The matchmaking system was not consulted.
 
 [Website](https://vin3ntking.github.io/Vin3ntKing/) · [LinkedIn](https://www.linkedin.com/in/jinquan-pan-609a73262/) · [Instagram](https://www.instagram.com/vin3nt_jp/)
