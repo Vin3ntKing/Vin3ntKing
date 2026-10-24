@@ -2,13 +2,12 @@
 
 # 你好，我是金泉。
 
-也可以叫我 Vincent。数学和计算机背景，最近做的东西大多在系统、数据基础设施和研究之间。
+叫 Vincent 也行。平时写些系统和数据相关的东西。写着写着，经常又回到「这个时间戳到底是什么意思」。
 
-在 Jump Trading、小红书和广州期货交易所实习过。最近在做的两个项目：
+在做 **PPER**，帮人们读懂环境政策提案，把自己的想法写成公众意见。TODO 还不少。
 
-- **PPER** — 帮助人们理解环境政策提案，把自己的关切写成公众意见。还在继续做。
-- **Live Market Data Monitor** — 用 C++ 接 OKX 现货成交数据，随时查查这一轮运行里收到的大额成交。
+还有一个接 OKX 现货成交的 **C++ 行情工具**，记住运行期间见过的大额成交。「最大的几笔」和「最近的几笔」，原来是两个需求。
 
-[个人网站](https://vin3ntking.github.io/Vin3ntKing/)上放了一些技术笔记和照片。做过的东西，不一定都能在公开仓库里找到。
+[个人网站](https://vin3ntking.github.io/Vin3ntKing/)上有一些技术笔记、照片，以及一个防御力明显过剩的头像。
 
 [个人网站](https://vin3ntking.github.io/Vin3ntKing/) · [LinkedIn](https://www.linkedin.com/in/jinquan-pan-609a73262/) · [Instagram](https://www.instagram.com/vin3nt_jp/)

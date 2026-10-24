@@ -2,13 +2,12 @@
 
 # Hi, I'm Jinquan.
 
-I also go by Vincent. My background is in math and computer science; most of my recent work sits somewhere between systems, data infrastructure, and research.
+Vincent works too. I build things around systems and data. A surprising amount of the work is agreeing on what a timestamp means.
 
-I've spent time at Jump Trading, Xiaohongshu (rednote), and Guangzhou Futures Exchange. A few things I've been building:
+I'm building **PPER**, a platform that helps people understand environmental proposals and write public comments. Still plenty of TODOs.
 
-- **PPER** — a platform for understanding environmental proposals and turning concerns into public comments. Still building.
-- **Live Market Data Monitor** — a C++ tool that follows OKX spot trades and keeps the largest ones a quick command away.
+There's also a **C++ market-data monitor** for OKX spot trades. It remembers the largest trades it has seen. “Largest” and “most recent” turned out to be different requirements.
 
-I keep occasional technical notes and photos on [my website](https://vin3ntking.github.io/Vin3ntKing/). Not everything I work on ends up in a public repository.
+[My website](https://vin3ntking.github.io/Vin3ntKing/) has occasional technical notes, photos, and an unnecessarily well-armored avatar.
 
 [Website](https://vin3ntking.github.io/Vin3ntKing/) · [LinkedIn](https://www.linkedin.com/in/jinquan-pan-609a73262/) · [Instagram](https://www.instagram.com/vin3nt_jp/)
