@@ -1,0 +1,30 @@
+name = "Jinquan Pan"
+alias = "Vincent / Vin3ntKing"
+intro = "I go by Vincent, too. My background is in math and computer science. This is a place for things I build, occasional notes, and bits of everyday life."
+about = "Buying stocks low and selling them high tends to leave me with more money than I had before. When I'm sleepy, closing my eyes helps. I've also noticed that the longer I go without eating, the hungrier I get."
+[[work]]
+name = "Jump Trading"
+icon = "company-icons/jump-white.webp"
+role = "Software Engineer"
+year = "Jun–Sep 2026"
+description = "Systems → AI research → quant research. Context switches included. Discretionary trading: out of scope."
+[[work]]
+name = "Xiaohongshu (rednote)"
+icon = "company-icons/rednote.png"
+role = "Software Engineer"
+year = "Aug–Dec 2025"
+description = "The data-quality platform had an expanding definition of “done”: plug in another source, compare it a new way, expose another metric. Somewhere in that loop, “why don’t these match?” became a feature request."
+[[work]]
+name = "Guangzhou Futures Exchange (GFEX)"
+icon = "company-icons/gfex-official.png"
+role = "Software Engineer"
+year = "Mar–Jul 2024"
+description = "SELECT the number the business actually meant. Then build the warehouse logic and pipelines to get it there."
+[[builds]]
+name = "PPER — A Voice in Environmental Policy"
+status = "Actively building"
+description = "I'm helping build a platform that makes environmental proposals easier to understand and respond to. It helps people turn their concerns into public comments, with AI along the way."
+[[builds]]
+name = "Live Market Data Monitor"
+status = "C++ · 2025"
+description = "A live view of crypto trades, built from the stream up. Connects to OKX, tracks the largest trades across spot markets, and keeps them a quick command away."

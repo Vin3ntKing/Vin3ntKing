@@ -1,0 +1,23 @@
+<div class="work-detail">
+{{ if eq .name "Jump Trading" }}
+<div class="work-topics" aria-label="Jump Trading topics">
+<button type="button" data-work-egg="systems"><span aria-hidden="true">⌘</span> Systems</button>
+<button type="button" data-work-egg="ai"><span aria-hidden="true">∑</span> AI research</button>
+<button type="button" data-work-egg="quant"><span aria-hidden="true">ƒ</span> Quant research</button>
+<button type="button" class="topic-missing" data-work-egg="trading"><span aria-hidden="true">↗</span> Discretionary trading <small>404</small></button>
+</div><p>Research meets infrastructure. Context switches included.</p>
+{{ else if eq .name "Xiaohongshu (rednote)" }}
+<div class="work-topics" aria-label="Xiaohongshu topics">
+<button type="button" data-work-egg="architecture"><span aria-hidden="true">∅</span> 0 → 1</button>
+<button type="button" data-work-egg="sources"><span aria-hidden="true">↳</span> Sources</button>
+<button type="button" data-work-egg="diff"><span aria-hidden="true">≠</span> Diffs</button>
+<button type="button" data-work-egg="metrics"><span aria-hidden="true">Δ</span> Results</button>
+</div><p>A data-quality platform, built from zero with the team. Kafka, Flink, Hive. The requirements kept streaming too.</p>
+{{ else }}
+<div class="work-topics" aria-label="Guangzhou Futures Exchange topics">
+<button type="button" data-work-egg="warehouse"><span aria-hidden="true">▤</span> Warehouses</button>
+<button type="button" data-work-egg="pipelines"><span aria-hidden="true">→</span> Pipelines</button>
+<button type="button" data-work-egg="business"><span aria-hidden="true">?</span> Business logic</button>
+</div><p><code>SELECT</code> the number the business actually meant. Trace it back to the source.</p>
+{{ end }}
+</div>

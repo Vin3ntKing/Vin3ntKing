@@ -1,0 +1,1 @@
+{{ define "main" }}<article class="article"><p class="meta">{{ .Section }}{{ if eq .Section "notes" }} · {{ .Date.Format "January 2006" }} · Edited {{ .Lastmod.Format "January 2006" }}{{ end }}{{ if .Draft }} · Draft{{ end }}</p><h1>{{ .Title }}</h1><div class="prose">{{ .Content }}</div><a class="quiet-link" href="{{ "#notes" | relURL }}">← Back to Notes</a></article>{{ end }}

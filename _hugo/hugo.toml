@@ -1,0 +1,6 @@
+baseURL = 'https://vin3ntking.github.io/Vin3ntKing/'
+languageCode = 'en'
+title = 'Jinquan Pan'
+disableKinds = ['taxonomy', 'term', 'RSS', 'sitemap']
+[params]
+  description = 'Jinquan Pan — work, notes, and things beyond the screen.'
