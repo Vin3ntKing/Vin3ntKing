@@ -1,21 +1,14 @@
-[English](./README.md) | [中文](./README.zh.md)
-- 🚀 Ahoy there! Meet Jinquan Pan, the code-slinging, data-wrangling wiz with a GPA so high it's out of this world! 🌟 Studying Mathematics and Computer Science at Boston University, Jinquan has conquered Data Structures, Computer Systems, Software Engineering, and more. But beware, the Dean's List is a regular landing spot for this rocketeer!
+[English](./README.md) · [中文](./README.zh.md)
 
-- 🔧 Equipped with a cosmic toolbox of Python, Java, SQL, and more, Jinquan's been busy saving the digital universe one project at a time. From battling in CitiBank's Financial Innovation Application Competition to leading a COVID-19 policies research, no challenge is too great!
+# Hi, I'm Jinquan.
 
-- 💬 Jinquan even ventured into the realms of Node.js, HTML, CSS, and JavaScript to build an online chatting room for interstellar communication. And, for when math is the only language that matters, the "Little Calculators" project is Jinquan's secret weapon.
+I also go by Vincent. My background is in math and computer science; most of my recent work sits somewhere between systems, data infrastructure, and research.
 
-- 🎓 When not busy exploring the digital cosmos, Jinquan shares knowledge with fellow earthlings as a Course Assistant at Boston University, tutoring 200+ students and grading assignments faster than a speeding comet! 💫
+I've spent time at Jump Trading, Xiaohongshu (rednote), and Guangzhou Futures Exchange. A few things I've been building:
 
-- 🌐 Jinquan's also a tech aficionado at the Chinese Students and Scholars Association (CSSA), maintaining and updating their website daily, and even building a WeChat mini-program for Boston University's Chinese students.
+- **PPER** — a platform for understanding environmental proposals and turning concerns into public comments. Still building.
+- **Live Market Data Monitor** — a C++ tool that follows OKX spot trades and keeps the largest ones a quick command away.
 
-- 💬 Fluent in Mandarin, Cantonese, and English, Jinquan is ready to embark on any intergalactic mission. So buckle up and join this celestial coder on a journey across the programming universe! 🚀✨
-<!---
-Vin3ntKing/Vin3ntKing is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+I keep occasional technical notes and photos on [my website](https://vin3ntking.github.io/Vin3ntKing/). Not everything I work on ends up in a public repository.
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Vin3ntKing&show_icons=true&theme=radical" alt="Vin3ntKing's GitHub stats" height="195">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vin3ntKing&layout=compact&theme=radical" alt="Top Langs" height="195">
-</p>
+[Website](https://vin3ntking.github.io/Vin3ntKing/) · [LinkedIn](https://www.linkedin.com/in/jinquan-pan-609a73262/) · [Instagram](https://www.instagram.com/vin3nt_jp/)
