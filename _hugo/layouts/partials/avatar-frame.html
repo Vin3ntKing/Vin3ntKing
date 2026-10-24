@@ -1,0 +1,4 @@
+<img class="rank-portrait-ring" src="{{ "rank/challenger-ring.png" | relURL }}" width="437" height="437" alt="" aria-hidden="true">
+<div class="rank-original-art" aria-hidden="true"><img class="rank-original-still" src="{{ "rank/challenger-wings.png" | relURL }}" width="2296" height="2976" alt="" decoding="async"><div class="rank-original-animation" data-rank-animation="{{ "rank/challenger-reveal.json" | relURL }}"></div></div>
+<script src="{{ "vendor/lottie-light-5.12.2.min.js" | relURL }}" defer></script>
+{{ $rankJS := resources.Get "rank-original.js" | minify | fingerprint }}<script src="{{ $rankJS.RelPermalink }}" defer></script>
